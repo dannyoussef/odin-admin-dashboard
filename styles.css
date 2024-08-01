@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 #grid-container {
   display: grid;
   height: 100vh;
@@ -5,7 +9,7 @@
   grid-template: repeat(6, 1fr) / repeat(6, 1fr);
   grid-template-areas:
     "sidebar header header header header header"
-    "sidebar header header header header header"
+    "sidebar main main main main main"
     "sidebar main main main main main"
     "sidebar main main main main main"
     "sidebar main main main main main"
@@ -18,6 +22,9 @@
 
 #sidebar {
   grid-area: sidebar;
+  display: grid;
+  grid-template: repeat(1, 1fr) repeat(2, 2fr);
+  gap: 20px;
 }
 
 #header {
@@ -26,4 +33,9 @@
 
 #main {
   grid-area: main;
+}
+
+.sidebar-cells {
+  border: 2px solid blue;
+  padding-left: 20px;
 }
