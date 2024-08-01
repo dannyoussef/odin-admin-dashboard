@@ -29,6 +29,7 @@ body {
 
 #header {
   grid-area: header;
+  display: grid;
 }
 
 #main {
@@ -38,4 +39,29 @@ body {
 .sidebar-cells {
   border: 2px solid blue;
   padding-left: 20px;
+}
+
+.header-cells {
+  border: 2px solid green;
+}
+
+#top-header {
+  display: grid;
+  grid-template-areas: "search search search search . bell user-info";
+}
+
+.top-header-cells {
+  border: 2px solid;
+}
+
+#search {
+  grid-area: search;
+}
+
+#bell-icon {
+  grid-area: bell;
+}
+
+#user-info {
+  grid-area: user-info;
 }
