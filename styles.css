@@ -91,3 +91,35 @@ body {
 .bottom-header-cells {
   border: 2px solid red;
 }
+
+#greeting {
+  display: grid;
+  grid-template-areas:
+    "user-img welcome-msg ."
+    "user-img user-name .";
+}
+
+.greeting-cells {
+  border: 1px solid green;
+}
+
+#user-img {
+  grid-area: user-img;
+  display: flex;
+  padding-left: 5%;
+}
+
+#welcome-msg {
+  grid-area: welcome-msg;
+  display: flex;
+}
+
+#welcome-msg > p {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+}
+
+#user-name {
+  grid-area: user-name;
+}
