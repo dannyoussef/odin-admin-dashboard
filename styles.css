@@ -5,7 +5,6 @@ body {
 #grid-container {
   display: grid;
   height: 100vh;
-  border: 2px solid black;
   grid-template: repeat(6, 1fr) / repeat(6, 1fr);
   grid-template-areas:
     "sidebar header header header header header"
@@ -37,21 +36,12 @@ body {
 }
 
 .sidebar-cells {
-  border: 2px solid blue;
   padding-left: 20px;
-}
-
-.header-cells {
-  border: 2px solid green;
 }
 
 #top-header {
   display: grid;
-  grid-template-areas: "search search search search . bell user-info";
-}
-
-.top-header-cells {
-  border: 2px solid;
+  grid-template-areas: "search search search search  bell  user-info";
 }
 
 #search {
@@ -66,6 +56,8 @@ body {
   grid-area: user-info;
 }
 
+#user-info,
+#bell-icon,
 #search {
   display: flex;
   align-items: center;
@@ -73,9 +65,29 @@ body {
 }
 
 #search-bar {
-  width: 80%;
+  width: 90%;
   height: 40%;
   border-radius: 50px;
   border: none;
   background-color: #e1e5eb;
+}
+
+#bell-icon {
+  padding: 0;
+  justify-content: right;
+}
+
+#user-info {
+  justify-content: center;
+  padding: 0;
+}
+
+#bottom-header {
+  border: 2px solid;
+  display: grid;
+  grid-template-columns: repeat(1, 3fr) repeat(3, 0.5fr);
+}
+
+.bottom-header-cells {
+  border: 2px solid red;
 }
