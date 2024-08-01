@@ -65,3 +65,17 @@ body {
 #user-info {
   grid-area: user-info;
 }
+
+#search {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+
+#search-bar {
+  width: 80%;
+  height: 40%;
+  border-radius: 50px;
+  border: none;
+  background-color: #e1e5eb;
+}
