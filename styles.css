@@ -41,7 +41,7 @@ body {
 
 #top-header {
   display: grid;
-  grid-template-areas: "search search search search  bell  user-info";
+  grid-template-areas: "search search search search  .  user-info";
   padding-top: 1%;
 }
 
@@ -49,36 +49,26 @@ body {
   grid-area: search;
 }
 
-#bell-icon {
-  grid-area: bell;
-}
-
-#user-info {
+#profile {
   grid-area: user-info;
 }
 
-#user-info,
-#bell-icon,
+#profile,
 #search {
   display: flex;
   align-items: center;
 }
 
 #search-bar {
-  width: 90%;
-  height: 40%;
+  width: 100%;
+  height: 50%;
   border-radius: 50px;
   border: none;
   background-color: #e1e5eb;
 }
 
-#bell-icon {
-  padding: 0;
+#profile {
   justify-content: right;
-}
-
-#user-info {
-  justify-content: center;
   padding: 0;
 }
 
@@ -92,6 +82,7 @@ body {
 #top-header,
 #bottom-header {
   padding-left: 1%;
+  padding-right: 1%;
 }
 
 #greeting {
@@ -128,4 +119,22 @@ body {
 
 #user-name > h1 {
   margin: 0;
+}
+
+#share-btn,
+#upload-btn,
+#new-btn {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 1em;
 }
