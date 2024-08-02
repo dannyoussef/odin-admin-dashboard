@@ -203,7 +203,6 @@ button {
 
 #trending-card,
 #announcements-card {
-  border: 1px solid green;
   margin: 12px 4% 3% 4%;
   border-radius: 20px;
   height: 300px;
@@ -234,4 +233,22 @@ button {
 
 .project-icons {
   padding: 0px 10px 0px 10px;
+}
+
+#announcements-card {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(1, 1fr);
+  padding: 20px 10px 20px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.announcements-content > p,
+h4 {
+  margin: 0;
+}
+
+hr {
+  width: 100%;
+  align-self: center;
+  border: 1px solid;
 }
