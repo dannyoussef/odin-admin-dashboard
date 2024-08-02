@@ -33,6 +33,8 @@ body {
 
 #main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(1, 3fr) repeat(1, 1fr);
 }
 
 .sidebar-cells {
@@ -137,4 +139,28 @@ button {
   height: 40px;
   border-radius: 50px;
   font-size: 1em;
+}
+
+.main-cells {
+  border: 1px solid blue;
+}
+
+#projects {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 30px;
+  padding: 10px;
+}
+
+.project-cards {
+  border: 1px solid green;
+}
+
+#announcements-trending {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(1, 1fr);
+}
+
+.anouncements-trending-section {
+  border: 1px solid purple;
 }
