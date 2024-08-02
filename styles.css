@@ -153,11 +153,11 @@ button {
 }
 
 .project-cards {
-  border: 1px solid green;
   margin: 3% 4% 3% 4%;
   border-radius: 20px;
   border-left: 20px solid purple;
   height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #projects-title {
