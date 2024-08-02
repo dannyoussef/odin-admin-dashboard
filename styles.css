@@ -149,7 +149,7 @@ button {
 #projects {
   display: grid;
   grid-template: repeat(1, 0.1fr) repeat(3, 1fr) / repeat(2, 1fr);
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 .project-cards {
@@ -185,11 +185,12 @@ button {
 
 #announcements-title > h2 {
   margin-bottom: 0;
-  margin-left: 2%;
+  margin-left: 4.2%;
 }
 
 #announcements-card {
   border: 1px solid green;
-  margin: 3% 4% 3% 4%;
+  margin: 12px 4% 3% 4%;
   border-radius: 20px;
+  height: 300px;
 }
