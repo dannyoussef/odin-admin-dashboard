@@ -15,10 +15,6 @@ body {
     "sidebar main main main main main";
 }
 
-.grid-sections {
-  /* border: 1px solid red; */
-}
-
 #sidebar {
   grid-area: sidebar;
   display: grid;
@@ -142,10 +138,6 @@ button {
   font-size: 1em;
 }
 
-.main-cells {
-  /* border: 1px solid blue; */
-}
-
 #projects {
   display: grid;
   grid-template: repeat(1, 0.1fr) repeat(3, 1fr) / repeat(2, 1fr);
@@ -177,11 +169,6 @@ button {
 #announcements-trending {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(1, 1fr);
-  /* height: fit-content; */
-}
-
-.anouncements-trending-section {
-  /* border: 1px solid purple; */
   /* height: fit-content; */
 }
 
@@ -279,4 +266,12 @@ hr {
 #sidebar-header > div,
 #sidebar-main-tabs > div {
   display: flex;
+}
+
+#sidebar-header > div > h1,
+#sidebar-support-tabs > div > p,
+#sidebar-header > div > p,
+#sidebar-main-tabs > div > p {
+  padding-left: 20px;
+  font-weight: bold;
 }
