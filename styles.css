@@ -255,20 +255,20 @@ hr {
 
 #trending-card {
   display: grid;
-  grid-template-columns: repeat(1, 0.5fr) repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .trending-content {
   border: 2px solid;
   display: grid;
-  grid-template-columns: repeat(1, 1fr) / repeat(1, 1fr);
+  grid-template: repeat(4, 1fr);
 }
 
-.trending-icon,
-.trending-text {
+.trending-desc {
   border: 2px solid red;
+  display: flex;
 }
 
-.trending-icon {
-  margin: auto;
+.trending-desc > p {
+  padding-left: 10px;
 }
