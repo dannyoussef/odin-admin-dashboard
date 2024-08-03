@@ -270,5 +270,6 @@ hr {
 }
 
 .trending-desc > p {
-  padding-left: 10px;
+  padding-left: 20px;
+  align-content: center;
 }
