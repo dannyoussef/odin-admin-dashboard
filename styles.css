@@ -252,3 +252,23 @@ hr {
   align-self: center;
   border: 1px solid;
 }
+
+#trending-card {
+  display: grid;
+  grid-template-columns: repeat(1, 0.5fr) repeat(1, 1fr);
+}
+
+.trending-content {
+  border: 2px solid;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr) / repeat(1, 1fr);
+}
+
+.trending-icon,
+.trending-text {
+  border: 2px solid red;
+}
+
+.trending-icon {
+  margin: auto;
+}
