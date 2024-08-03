@@ -16,7 +16,7 @@ body {
 }
 
 .grid-sections {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 #sidebar {
@@ -143,19 +143,19 @@ button {
 }
 
 .main-cells {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 #projects {
   display: grid;
   grid-template: repeat(1, 0.1fr) repeat(3, 1fr) / repeat(2, 1fr);
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 .project-cards {
   margin: 3% 4% 3% 4%;
-  border-radius: 20px;
-  border-left: 20px solid purple;
+  border-radius: 10px;
+  border-left: 10px solid gray;
   height: 200px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition-duration: 0.3s;
@@ -177,12 +177,12 @@ button {
 #announcements-trending {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(1, 1fr);
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 .anouncements-trending-section {
-  border: 1px solid purple;
-  height: fit-content;
+  /* border: 1px solid purple; */
+  /* height: fit-content; */
 }
 
 #trending,
@@ -255,21 +255,28 @@ hr {
 
 #trending-card {
   display: grid;
+  height: 325px;
   grid-template-columns: repeat(1, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .trending-content {
-  border: 2px solid;
   display: grid;
   grid-template: repeat(4, 1fr);
 }
 
 .trending-desc {
-  border: 2px solid red;
   display: flex;
+  padding-left: 20px;
 }
 
 .trending-desc > p {
   padding-left: 20px;
   align-content: center;
+}
+
+#sidebar-support-tabs > div,
+#sidebar-header > div,
+#sidebar-main-tabs > div {
+  display: flex;
 }
